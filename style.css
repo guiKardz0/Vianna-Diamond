@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@keyframes deslize { /*Animação de delize horizontal para as imagens*/
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 *{
-        scroll-behavior: smooth;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
@@ -12,7 +21,9 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 
-
+a{
+    text-decoration: none;
+}
 
 
 
@@ -128,7 +139,7 @@ nav a:hover{ /*Configurações de animação das âncoras do nav para quando o m
     margin-top: 70px;
 }
 
-.orcamentoApresentaçao{
+.orcamentoApresentaçao{ /*Configurações do botão para o orçamento*/
     background-color: #ffbb33;
     text-decoration: none;
     color: black;
@@ -139,13 +150,13 @@ nav a:hover{ /*Configurações de animação das âncoras do nav para quando o m
     flex-grow: 1;
     transition: all 0.5s;}
 
-.orcamentoApresentaçao:hover{
+.orcamentoApresentaçao:hover{ /*Animações para o botão de orçamento*/
     background-color: #ffaa00;
     color: white;
     border: solid white 2px;
 }
 
-.produtos{
+.produtos{ /*Configurações dos botões de redirect para os produtos*/
     background-color: silver;
     text-decoration: none;
     color: black;
@@ -161,4 +172,65 @@ nav a:hover{ /*Configurações de animação das âncoras do nav para quando o m
     background-color: #000000;
     color: white;
     border: solid white 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Configurtações da Segunda Seção*/
+
+.secaoDescubra{ /*COnfigurações da caica que engloba toda a segunda seção*/
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.conteudoDescubra{ /*Configurações da caixa que engloba os textos e âncoras da segunda seção*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtituloDescubra{ /*Configuraçõs da pergunta da segunda seção*/
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.tituloDescubra{ /*Configurações do título da segunda seção*/
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.slideContainer{ /*Configurações da caixa mais externa que engloba todas as imagens do slider*/
+    width: 30%;          
+    overflow: hidden;    
+}
+
+.slide{ /*Configurações da caixa mais interna que engloba todas as imagens do slider*/
+    display: flex;
+    animation: deslize 20s linear infinite;
+    gap: 20px;
+    transform: all 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.slide:hover{
+    animation-play-state: paused;
+    transition: all 1s;
+}
+
+.imagemDescubra{
+    width: 400px;
 }
