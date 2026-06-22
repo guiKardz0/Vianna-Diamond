@@ -27,7 +27,59 @@ body{
     background:#e8d06d;
 }
 
+*Configurações do header*/
+
+header {
+    /*Configurações da caixa que emgloba todo o cabeçalho*/
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header:hover {
+    /*Configuração de animações do cabeçalho para quando o mouse está em cima*/
+    box-shadow: 0px -5px 10px 10px #C78600;
+    transition: all 1s;
+}
+
+nav {
+    /*Caixa que envolve todo o menu de navegação*/
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10%;
+    margin-top: 20px;
+    gap: 10%;
+}
+
+nav a {
+    /*Configurações dos links do Nav*/
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+}
+
+nav a:hover {
+    /*Configurações de animação das âncoras do nav para quando o mouse esta em cima*/
+    color: #865a00;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
 /* FORMULÁRIO */
+
+.logoImagem {
+    /*Configurações da Logo no Header*/
+    flex-grow: 1;
+    width: 150px;
+    margin: 20px 100px 20px 20px;
+}
 
 .contato{
     width:100%;
