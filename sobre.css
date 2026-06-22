@@ -107,7 +107,7 @@ nav a:hover {
 
 
 main {
-<<<<<<< HEAD
+
     background-color: white; /*configurações do main*/
       
 }
@@ -161,7 +161,6 @@ main {
     .segunda{     /*configurações das imagem de baixo*/
         display: flex;
         justify-content: space-between;
-=======
     background-color: white;
 
 }
@@ -231,11 +230,9 @@ main {
     img {
 
         width: 50px;
->>>>>>> 2ff6da0960df38b9b5379bcfcc871d9831ac73dd
-    }
+
 }
 
-<<<<<<< HEAD
     .calendario {   /*configurações da img do calendario*/
          display: flex;
             justify-content: space-evenly;
@@ -278,16 +275,6 @@ main {
 
    .produtos {       /*configurações do botão de produtos*/
      background-color: silver;
-=======
-.botao {
-    margin: 0px 0px 10px 20px;
-
-}
-
-
-.orçamentos {
-    background-color: #ffbb33;
->>>>>>> 2ff6da0960df38b9b5379bcfcc871d9831ac73dd
     text-decoration: none;
     color: black;
     padding: 20px;
@@ -298,13 +285,8 @@ main {
     transition: all 0.5s;
 }
 
-<<<<<<< HEAD
    .produtos:hover {   /*configurações de transição do botão produtos*/
       background-color: #000000;
-=======
-.orçamentos:hover {
-    background-color: #ffaa00;
->>>>>>> 2ff6da0960df38b9b5379bcfcc871d9831ac73dd
     color: white;
     border: solid white 2px;
 }
@@ -321,8 +303,4 @@ main {
     transition: all 0.5s;
 }
 
-.produtos:hover {
-    background-color: #000000;
-    color: white;
-    border: solid white 2px;
 }
