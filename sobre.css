@@ -97,10 +97,10 @@ nav a:hover{ /*Configurações de animação das âncoras do nav para quando o m
 
 
 main {
-    background-color: white;
+    background-color: white; /*configurações do main*/
       
 }
-    #sobre-container {
+    #sobre-container {  /*configurações do container pai*/
         display: flex;
         align-items: center;  
         justify-content: space-around;   
@@ -110,7 +110,7 @@ main {
        
     }
 
-    .imagem-mesa{
+    .imagem-mesa{   /*configurações da imagem da mesa */
        
         img{
             
@@ -120,17 +120,17 @@ main {
         }
     }
 
-    .imagem-ferramentas{
+    .imagem-ferramentas{  /*configurações da imagem das ferramentas img 2*/
         img{
             border: 15px solid white;
-           margin: 400px 150px 100px -200px; 
+           margin: 350px 150px 100px -200px; 
            border-radius: 40px; 
             width: 400px;
             height: 300px;
 
         }
     }
-    #texto {
+    #texto {            /* configurações do texto*/
         
         border-radius: 35px;
         h1{
@@ -147,12 +147,12 @@ main {
 
 
    
-    .segunda{
+    .segunda{     /*configurações das imagem de baixo*/
         display: flex;
         justify-content: space-between;
     }
 
-    .calendario {
+    .calendario {   /*configurações da img do calendario*/
          display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -168,10 +168,11 @@ main {
     .botao{
         margin: 0px 0px 10px 20px;
         
+        
     }
 
 
-    .orçamentos {
+    .orçamentos {  /*configurações do botão de orçamentos */
       background-color: #ffbb33;
     text-decoration: none;
     color: black;
@@ -180,15 +181,18 @@ main {
     border: solid black 2px;
     border-radius: 40px;
     flex-grow: 1;
-    transition: all 0.5s;}
+    transition: all 0.5s;
     
-   .orçamentos:hover {
+
+}
+    
+   .orçamentos:hover { /* configurações da transição do botão de orçamentos */
      background-color: #ffaa00;
     color: white;
     border: solid white 2px;
    }
 
-   .produtos {
+   .produtos {       /*configurações do botão de produtos*/
      background-color: silver;
     text-decoration: none;
     color: black;
@@ -200,7 +204,7 @@ main {
     transition: all 0.5s;
    }
 
-   .produtos:hover {
+   .produtos:hover {   /*configurações de transição do botão produtos*/
       background-color: #000000;
     color: white;
     border: solid white 2px;
