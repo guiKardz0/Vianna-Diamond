@@ -18,15 +18,15 @@
         </div>
 
         <nav>
-            <a href="./index.html">Início</a>
-            <a href="./Sobre.html">Sobre Nós</a>
-            <a href="./produtos.html">Produtos</a>
-            <a href="./contatos.html">Contatos</a>
+            <a href="#topo">Início</a>
+            <a href="Sobre.html">Sobre Nós</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contatos.html">Contatos</a>
         </nav>
 
-        <div class="whatsapp">
+        <a href="https://wa.me/5511980182406" class="whatsapp">
             <img class="whatsappImagem" src="./Imagens/whatsapp-logo.png" alt="whatsapp-logo">
-        </div>
+        </a>
     </header>
     <main>
         <section class="secaoApresentaçao">
@@ -37,13 +37,13 @@
             </h2>
             <p class="descriçaoApresentaçao">Há mais de <span
                     style="text-decoration: underline solid rgb(214, 162, 32);">10 anos</span>, a Vianna Diamond
-                oferece<br> <span style="color: rgb(214, 162, 32)">Fabricação</span>, <span
-                    style="color: rgb(214, 162, 32)">Instalação</span> e <span
-                    style="color: rgb(214, 162, 32)">Higienização</span> de cortinas,<br> persianas e toldos, sempre com
+                oferece<br> <a href="#secaoServicos"><span class="textoServicos">Fabricação</span></a>, <span
+                    class="textoServicos">Instalação</span> e <span class="textoServicos">Higienização</span> de
+                cortinas,<br> persianas e toldos, sempre com
                 qualidade, <br>sofisticação e compromisso.</p>
             <div class="linksApresentaçao">
-                <a class="orcamentoApresentaçao" href="">Solicite seu Orçamento</a>
-                <a class="produtos" href="">Confira nossos Produtos</a>
+                <a class="orcamento" href="contatos.html">Solicite seu Orçamento</a>
+                <a class="produtos" href="produtos.html">Confira nossos Produtos</a>
             </div>
         </section>
 
@@ -53,10 +53,12 @@
                     <h3 class="subtituloDescubra">Precisando de uma inspiração?</h3>
                     <h2 class="tituloDescubra">Modelos que<br> Encantam!</h2>
                     <p class="descricaoDescubra">Descubra alguns dos modelos
-                        de cortinas percianas e toldos que conquistaram nossos clientes:
+                        de cortinas percianas e toldos<br> que conquistaram nossos clientes:
                     </p>
-                    <a class="soliciteOrcamento">Solicite seu orçamento</a>
-                    <a class="produtos">Saiba mais</a>
+                    <div class="linksDescubra">
+                        <a class="orcamento">Solicite seu orçamento</a>
+                        <a class="produtos">Ver mais</a>
+                    </div>
                 </div>
 
                 <div class="slideContainer">
@@ -67,15 +69,72 @@
                         <img class="imagemDescubra" src="./Imagens/Imagem-slide-04.jpeg" alt="foto04">
                         <img class="imagemDescubra" src="./Imagens/Imagem-slide-05.jpeg" alt="foto05">
 
+                        <img class="imagemDescubra" src="./Imagens/Imagem-slide-01.jpeg" alt="foto01">
+                        <img class="imagemDescubra" src="./Imagens/Imagem-slide-02.jpeg" alt="foto02">
+                        <img class="imagemDescubra" src="./Imagens/Imagem-slide-03.jpeg" alt="foto03">
+                        <img class="imagemDescubra" src="./Imagens/Imagem-slide-04.jpeg" alt="foto04">
+                        <img class="imagemDescubra" src="./Imagens/Imagem-slide-05.jpeg" alt="foto05">
                     </div>
                 </div>
             </div>
-
-
-
         </section>
 
-        <section class="secaoServicos">
+
+
+
+
+
+        <section class="secaoVideos">
+            <h2>Conheça nossos produtos em ação com videos de nossos clientes</h2>
+
+            <div class="videoContainer">
+                <button class="seta-esquerda" id="setaEsquerda">
+                    &#10094;
+                </button>
+
+                <div class="videoSlideContainer">
+                    <div class="videoSlider" id="videoTrack">
+
+                        <div class="video-item">
+                            <video controls>
+                                <source src="./Imagens/Abertura-Toldo.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-titulo">Abertura e fechamento automáticos de toldo </p>
+                        </div>
+
+                        <!-- VÍDEO 2 -->
+                        <div class="video-item">
+                            <video controls>
+                                <source src="./Imagens/Video-funcionamento-curtinas.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-titulo">Cortinas funcionando por controle remoto</p>
+                        </div>
+
+                        <!-- VÍDEO 3 -->
+                        <div class="video-item">
+                            <video controls>
+                                <source src="./Imagens/Abertura-Persianas.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-titulo">Persianas abertas por comando remoto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOTÃO DIREITO -->
+                <button class="seta seta-direita" id="setaDireita">
+                    &#10095; <!-- Símbolo de seta -->
+                </button>
+            </div>
+
+            <!-- INDICADORES (bolinhas) -->
+            <div class="indicadores" id="indicadores">
+                <span class="bolinha ativa" data-index="0"></span>
+                <span class="bolinha" data-index="1"></span>
+                <span class="bolinha" data-index="2"></span>
+            </div>
+        </section>
+
+        <section id="secaoServicos">
             <h2 class="tituloServicos">Serviços Oferecidos:</h2>
             <article class="cardServicos">
                 <img src="" alt="">
