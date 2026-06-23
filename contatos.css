@@ -27,7 +27,7 @@ body{
     background:#e8d06d;
 }
 
-*Configurações do header*/
+/*Configurações do header*/
 
 header {
     /*Configurações da caixa que emgloba todo o cabeçalho*/
@@ -70,7 +70,6 @@ nav a:hover {
     cursor: pointer;
     transition: all 0.5s;
 }
-
 
 /* FORMULÁRIO */
 
