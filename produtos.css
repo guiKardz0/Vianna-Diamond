@@ -82,6 +82,9 @@ nav a:hover{ /*Configurações de animação das âncoras do nav para quando o m
     text-align: center;
     align-items: center;
 }
+body{
+    background-color: black;
+}
 main{
     background-color: #865a00;
     color: silver;
@@ -105,9 +108,11 @@ main{
     flex-direction: column;
     text-align: center;
     color: white;
+    width: 400px;
     border-radius: 30px;
     padding: 20px 20px 10px 20px;
     margin: 60px;
+    
 
     img{        /*configuraçoes da imagem que esta dentro dos cards*/
         width: 250px;
@@ -144,24 +149,28 @@ main{
 
 .container-persianas {
 
-      display: flex;
-    flex-direction: row;
+    text-align: center;
+    display: flex;
+    flex-direction:row;
     flex-wrap: wrap;
+    gap: 20px;
+    
 
 }
 
-.card-persianas{
 
+.card-persianas{
     font-size: 15px;
-    display: flex;
-    align-items: center;
-    background-color: black;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    border-radius: 30px;
-    padding: 20px 20px 10px 20px;
-    margin: 60px;
+    width: 400px;
+    flex-wrap: wrap;
+   display:flex;
+   align-items: center;
+   text-align: center;
+   flex-direction:column;
+   background-color: silver;
+   color: black;
+   border-radius:20px;
+   padding: 20px;
 
     img{        /*configuraçoes da imagem que esta dentro dos cards*/
         width: 250px;
@@ -173,5 +182,25 @@ main{
         font-size: 25px;
     }
 
+    button{
+      
+        /*Configurações do botão para o orçamento*/
+        background-color: #ffbb33;
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        border: solid black 2px;
+        border-radius: 40px;
+        flex-grow: 1;
+        transition: all 0.5s;
+    }
+    
+        button:hover {
+        /*Animações para o botão de orçamento*/
+        background-color: #ffaa00;
+        color: white;
+        border: solid white 2px;
+    }
 
 }
