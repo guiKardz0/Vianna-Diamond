@@ -142,3 +142,36 @@ main{
     }
 
 
+.container-persianas {
+
+      display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.card-persianas{
+
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    padding: 20px 20px 10px 20px;
+    margin: 60px;
+
+    img{        /*configuraçoes da imagem que esta dentro dos cards*/
+        width: 250px;
+        height: 300px; 
+        border-radius: 20px;   
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+
+}
