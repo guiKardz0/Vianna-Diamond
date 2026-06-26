@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vianna Diamond</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./Imagens/Vianna-DIamond-Logo.png"
-    type="image/x-icon">
+    <link rel="shortcut icon" href="./Imagens/Vianna-DIamond-Logo.png" type="image/x-icon">
 </head>
 
 <body id="topo">
     <header>
         <div class="logo">
-            <a href="#topo"><img class="logoImagem" src="./Imagens/Vianna-DIamond-Logo.png"
+            <a href="#topo"><img class="logoImagem" src="./Imagens/Vianna-Diamond-Logo.png"
                     alt="Logo-Vianna-Diamond"></a>
         </div>
 
@@ -24,7 +23,7 @@
             <a href="contatos.html">Contatos</a>
         </nav>
 
-        <a href="https://wa.me/5511980182406" class="whatsapp">
+        <a href="https://wa.me/5511980182406" class="whatsapp" target="_blank">
             <img class="whatsappImagem" src="./Imagens/whatsapp-logo.png" alt="whatsapp-logo">
         </a>
     </header>
@@ -32,7 +31,7 @@
         <section class="secaoApresentaçao">
             <h2 class="tituloApresentaçao">Transforme seus ambientes<br> com <span
                     style="color: rgb(214, 162, 32)">Cortinas</span>, <span
-                    style="color: rgb(214, 162, 32)">Percianas</span><br> e
+                    style="color: rgb(214, 162, 32)">Persianas</span><br> e
                 <span style="color: rgb(214, 162, 32)">Toldos</span> de todos os tipos
             </h2>
             <p class="descriçaoApresentaçao">Há mais de <span
@@ -85,15 +84,15 @@
 
 
         <section class="secaoVideos">
-            <h2>Conheça nossos produtos em ação com videos de nossos clientes</h2>
+            <h2>Depoimento de nossos clientes</h2>
 
             <div class="videoContainer">
-                <button class="seta-esquerda" id="setaEsquerda">
+                <button class="seta seta-esquerda" id="setaEsquerda">
                     &#10094;
                 </button>
 
                 <div class="videoSlideContainer">
-                    <div class="videoSlider" id="videoTrack">
+                    <div class="videoTrack" id="videoTrack">
 
                         <div class="video-item">
                             <video controls>
@@ -102,7 +101,6 @@
                             <p class="video-titulo">Abertura e fechamento automáticos de toldo </p>
                         </div>
 
-                        <!-- VÍDEO 2 -->
                         <div class="video-item">
                             <video controls>
                                 <source src="./Imagens/Video-funcionamento-curtinas.mp4" type="video/mp4">
@@ -110,7 +108,6 @@
                             <p class="video-titulo">Cortinas funcionando por controle remoto</p>
                         </div>
 
-                        <!-- VÍDEO 3 -->
                         <div class="video-item">
                             <video controls>
                                 <source src="./Imagens/Abertura-Persianas.mp4" type="video/mp4">
@@ -120,13 +117,11 @@
                     </div>
                 </div>
 
-                <!-- BOTÃO DIREITO -->
                 <button class="seta seta-direita" id="setaDireita">
-                    &#10095; <!-- Símbolo de seta -->
+                    &#10095;
                 </button>
             </div>
 
-            <!-- INDICADORES (bolinhas) -->
             <div class="indicadores" id="indicadores">
                 <span class="bolinha ativa" data-index="0"></span>
                 <span class="bolinha" data-index="1"></span>
@@ -135,32 +130,51 @@
         </section>
 
         <section id="secaoServicos">
-            <h2 class="tituloServicos">Serviços Oferecidos:</h2>
-            <article class="cardServicos">
-                <img src="" alt="">
-                <h3 class="tituloCard"></h3>
-                <p class="descricaoCard"></p>
-            </article>
+            <h2 class="tituloServicos">Serviços Oferecidos</h2>
+            <div class="servicos">
+                <article class="cardServicos">
+                    <div class="cardTopo">
+                        <img src="./Imagens/Fabricação.png" alt="Fabricação" class="servicosImagem">
+                        <h3 class="tituloCard">Fabricação</h3>
+                    </div>
+                    <p class="descricaoCard">Na Vianna Diamond, contamos com fabricação própria de cortinas, persianas e
+                        toldos. Todos os nossos produtos são produzidos em nossa fábrica, utilizando diversos tipos de
+                        tecidos e materiais de alta qualidade, garantindo excelência, durabilidade e um acabamento
+                        sofisticado.</p>
+                </article>
 
-            <article class="cardServicos">
-                <img src="" alt="">
-                <h3 class="tituloCard"></h3>
-                <p class="descricaoCard"></p>
-            </article>
+                <article class="cardServicos">
+                    <div class="cardTopo">
+                        <img src="./Imagens/Manutenção.png" alt="Manutenção" class="servicosImagem">
+                        <h3 class="tituloCard">Instalação e Manutenção</h3>
+                    </div>
+                    <p class="descricaoCard">Após a fabricação, também realizamos a instalação de cortinas, persianas e
+                        toldos. Além disso, oferecemos o serviço de retirada dos produtos para higienização, manutenção
+                        e demais procedimentos necessários, garantindo praticidade, qualidade e a conservação dos
+                        materiais.</p>
+                </article>
 
-            <article class="cardServicos">
-                <img src="" alt="">
-                <h3 class="tituloCard"></h3>
-                <p class="descricaoCard"></p>
-            </article>
+                <article class="cardServicos">
+                    <div class="cardTopo">
+                        <img src="./Imagens/Limpeza.png" alt="Limpeza" class="servicosImagem">
+                        <h3 class="tituloCard">Limpeza</h3>
+                    </div>
+                    <p class="descricaoCard">Também realizamos os serviços de lavagem e higienização de cortinas,
+                        persianas e toldos. Nossa equipe é responsável pela retirada dos produtos, pela execução do
+                        processo de limpeza e higienização e, posteriormente, pela reinstalação, garantindo praticidade,
+                        segurança e a preservação da qualidade dos materiais.</p>
+                </article>
+            </div>
         </section>
+
+
 
     </main>
     <footer>
         <p>© 2026 Vianna Diamond. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js">
+    <script src="main.js">
 
     </script>
 </body>
