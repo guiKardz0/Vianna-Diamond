@@ -92,7 +92,7 @@ main{
     text-align: center;
     font-size: 25px;
 }
-.container-cortinas {  /*configurações docontainer pai*/
+#container-cortinas {  /*configurações docontainer pai*/
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -171,7 +171,8 @@ main{
    background-color: silver;
    color: black;
    border-radius:20px;
-   padding: 20px;
+   padding: 20px 20px 10px 20px;
+   margin: 60px;
 
     img{        /*configuraçoes da imagem que esta dentro dos cards*/
         width: 250px;
