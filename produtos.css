@@ -148,9 +148,10 @@ main{
 
 
 .container-persianas {
-
+    
     text-align: center;
     display: flex;
+    justify-content: space-between;
     flex-direction:row;
     flex-wrap: wrap;
     gap: 20px;
@@ -203,4 +204,7 @@ main{
         border: solid white 2px;
     }
 
+}
+.titulo{
+    font-size: 60px;
 }
