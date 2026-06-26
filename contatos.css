@@ -81,6 +81,22 @@ nav a:hover {
     margin: 20px 100px 20px 20px;
 }
 
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsappImagem {
+    /*Configurações do icone do whatsapp presewnte no cabeçalho*/
+    flex-grow: 1;
+    width: 70px;
+    margin-right: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+
 .contato{
     width:100%;
     display:flex;
