@@ -104,10 +104,10 @@ main{
     font-size: 15px;
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: silver;
     flex-direction: column;
     text-align: center;
-    color: white;
+    color: black;
     width: 400px;
     border-radius: 30px;
     padding: 20px 20px 10px 20px;
@@ -208,4 +208,121 @@ main{
 }
 .titulo{
     font-size: 60px;
+}
+
+.texto-inicial{  /*configurações do começo texto do começo da pagina */
+    width: 700px;
+    text-align: center;
+    margin: 30px 20px 0px 350px;
+     background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+
+.container-produtos{  /*configurações da parte dos tomanho e comportamento dos cards*/
+    
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card-produtos {    /*configuraçoes  dos cards*/
+    font-size: 15px;
+    width: 400px;
+    flex-wrap: wrap;
+   display:flex;
+   align-items: center;
+   text-align: center;
+   flex-direction:column;
+   background-color: black;
+   color: silver;
+   border-radius:20px;
+   padding: 10px 10px 10px 10px;
+   margin: 0px;
+
+   img{        /*configuraçoes da imagem que esta dentro dos cards*/
+        width: 250px;
+        height: 300px; 
+        border-radius: 20px;   
+    }
+    h2{
+        font-size:  35px;
+    }
+button{
+      
+        /*Configurações do botão para o orçamento*/
+        background-color: #ffbb33;
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        border: solid black 2px;
+        border-radius: 40px;
+        flex-grow: 1;
+        transition: all 0.5s;
+    }
+    
+        button:hover {
+        /*Animações para o botão de orçamento*/
+        background-color: #ffaa00;
+        color: white;
+        border: solid white 2px;
+    }
+}
+
+
+
+.container-toldos{  /*configurações da parte dos tomanho e comportamento dos cards*/
+    
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card-toldos {    /*configuraçoes  dos cards*/
+    font-size: 15px;
+    width: 500px;
+    flex-wrap: wrap;
+   display:flex;
+   align-items: center;
+   text-align: center;
+   flex-direction:column;
+   background-color: silver;
+   color: black;
+   border-radius:20px;
+   padding: 10px 10px 10px 10px;
+   margin: 30px;
+
+   img{        /*configuraçoes da imagem que esta dentro dos cards*/
+        width: 250px;
+        height: 300px; 
+        border-radius: 20px;   
+    }
+    h2{
+        font-size:  35px;
+    }
+button{
+      
+        /*Configurações do botão para o orçamento*/
+        background-color: #ffbb33;
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        border: solid black 2px;
+        border-radius: 40px;
+        flex-grow: 1;
+        transition: all 0.5s;
+    }
+    
+        button:hover {
+        /*Animações para o botão de orçamento*/
+        background-color: #ffaa00;
+        color: white;
+        border: solid white 2px;
+    }
 }

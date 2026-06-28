@@ -215,3 +215,18 @@ hr{
 .email{
     color:black;
 }
+
+.redes {
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social{
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+}
