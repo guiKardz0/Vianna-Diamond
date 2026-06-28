@@ -62,8 +62,8 @@ nav {
 nav a {
     /*Configurações dos links do Nav*/
     color: white;
-    font-size: 25px;
-    padding: 5px;
+    font-size: 1.5rem;
+    padding: 1%;
 }
 
 nav a:hover {
@@ -76,7 +76,7 @@ nav a:hover {
 .logoImagem {
     /*Configurações da Logo no Header*/
     flex-grow: 1;
-    width: 150px;
+    width: 10rem;
     margin: 20px 100px 20px 20px;
 }
 
@@ -264,7 +264,6 @@ nav a:hover {
     background: white;
     max-width: 1400px;
     margin: 0 auto;
-    margin-right: 20px;
 }
 
 .subtituloDescubra {
@@ -550,9 +549,654 @@ footer{
 
 .rodape-topo{
     color: #ffbb33;
+    margin-top: 40px;
 }
 
 .copy{
     color: #999;
     margin: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*Configurações de Media Query*/
+
+
+@media (max-width: 1024px) { /*Media Query para dispositivos médios (Tablets)*/
+    
+/*Configurações do cabeçalho*/
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    
+    .logoImagem {
+        width: 8rem;
+        margin: 10px 20px;
+    }
+    
+    nav {
+        margin-right: 20px;
+        margin-top: 10px;
+        gap: 5%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav a {
+        font-size: 1.2rem;
+        padding: 8px 12px;
+    }
+    
+    .whatsappImagem {
+        width: 50px;
+        margin-right: 10px;
+    }
+    
+
+
+
+    /*Configurações da primeira seção*/
+    .secaoApresentaçao {
+        height: 600px;
+        padding: 20px;
+    }
+    
+    .tituloApresentaçao {
+        font-size: 45px;
+    }
+    
+    .descriçaoApresentaçao {
+        font-size: 22px;
+        padding: 0 20px;
+    }
+    
+    .linksApresentaçao {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    
+    .orcamento, .produtos {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+    
+
+
+    /*Configurações da segunda seção*/
+     .conteudoDescubra {
+        flex-direction: column;
+        padding: 40px 30px;      
+        min-height: auto;
+        gap: 30px;
+        margin: 0 auto;          
+        width: 100%;             
+        max-width: 1400px;       
+        box-sizing: border-box;  
+        text-align: center;
+    }
+    
+    [descubraEsquerda] {
+        width: 100%;
+    }
+    
+    .slideContainer {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .tituloDescubra {
+        font-size: 55px;
+    }
+    
+    .subtituloDescubra {
+        font-size: 24px;
+    }
+    
+    .imagemDescubra {
+        width: 280px;
+        height: 210px;
+    }
+    
+    .slide {
+        gap: 15px;
+        padding: 15px 0;
+    }
+    
+    @keyframes deslize {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-50% - 7.5px)); }
+    }
+    
+
+
+
+
+    /*Configurações de media query da seção dos videos*/
+    .secaoVideos {
+        padding: 40px 20px;
+    }
+    
+    .secaoVideos h2 {
+        font-size: 2rem;
+        margin-bottom: 60px;
+    }
+    
+    .videoContainer {
+        max-width: 100%;
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .seta {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .seta-esquerda {
+        left: -50px;
+    }
+    
+    .seta-direita {
+        right: -50px;
+    }
+    
+    .video-item video {
+        max-height: 350px;
+    }
+    
+
+
+    /* === SEÇÃO SERVIÇOS === */
+    #secaoServicos h2 {
+        font-size: 2rem;
+        padding: 60px 20px 30px 20px;
+    }
+    
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 80px;
+        margin: 0 20px;
+    }
+    
+    .cardServicos {
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+    }
+    
+    .cardServicos:hover {
+        transform: translateY(-5%) scale(1.02);
+    }
+    
+    .tituloCard {
+        font-size: 24px;
+    }
+    
+    .servicosImagem {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .descricaoCard {
+        font-size: 15px;
+        margin: 15px;
+    }
+}
+
+/* --- CELULAR GRANDE (até 768px) --- */
+@media (max-width: 768px) {
+    
+    /* === HEADER === */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .logoImagem {
+        width: 7rem;
+        margin: 5px 0;
+    }
+    
+    nav {
+        margin-right: 0;
+        margin-top: 5px;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    nav a {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    
+    .whatsappImagem {
+        width: 45px;
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    
+    /* === SEÇÃO APRESENTAÇÃO === */
+    .secaoApresentaçao {
+        height: 500px;
+        padding: 20px 15px;
+        background-position: center;
+    }
+    
+    .tituloApresentaçao {
+        font-size: 32px;
+    }
+    
+    .descriçaoApresentaçao {
+        font-size: 18px;
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+    
+    .linksApresentaçao {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 40px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .orcamento, .produtos {
+        padding: 12px 20px;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .orcamento:hover, .produtos:hover {
+        transform: translateY(-10%) scale(1.05);
+    }
+    
+    /* === SEÇÃO DESCUBRA === */
+    .secaoDescubra {
+        padding: 20px 10px;
+    }
+    
+    .conteudoDescubra {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+    
+    .subtituloDescubra {
+        font-size: 20px;
+    }
+    
+    .tituloDescubra {
+        font-size: 40px;
+    }
+    
+    .descricaoDescubra {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .descricaoDescubra br {
+        display: none;
+    }
+    
+    .linksDescubra {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .linksDescubra .orcamento,
+    .linksDescubra .produtos {
+        width: 80%;
+        max-width: 250px;
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    
+    .slideContainer {
+        min-height: 120px;
+        mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    }
+    
+    .imagemDescubra {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .slide {
+        gap: 12px;
+        padding: 10px 0;
+    }
+    
+    @keyframes deslize {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-50% - 6px)); }
+    }
+    
+    /* === SEÇÃO VÍDEOS === */
+    .secaoVideos {
+        padding: 30px 10px;
+    }
+    
+    .secaoVideos h2 {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+    
+    .videoContainer {
+        gap: 5px;
+        padding: 0 5px;
+    }
+    
+    .seta {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .seta-esquerda {
+        left: -15px;
+    }
+    
+    .seta-direita {
+        right: -15px;
+    }
+    
+    .video-item {
+        padding: 5px;
+    }
+    
+    .video-item video {
+        max-height: 250px;
+    }
+    
+    .video-titulo {
+        font-size: 0.9rem;
+        padding: 10px 0 8px 0;
+    }
+    
+    .indicadores {
+        gap: 8px;
+        margin-top: 15px;
+    }
+    
+    .bolinha {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .bolinha.ativa {
+        width: 25px;
+    }
+    
+    /* === SEÇÃO SERVIÇOS === */
+    #secaoServicos h2 {
+        font-size: 1.5rem;
+        padding: 40px 15px 20px 15px;
+    }
+    
+    .servicos {
+        gap: 20px;
+        padding-bottom: 50px;
+        margin: 0 10px;
+    }
+    
+    .cardServicos {
+        max-width: 100%;
+        border-radius: 15px;
+    }
+    
+    .cardServicos:hover {
+        transform: translateY(-3%) scale(1.01);
+    }
+    
+    .cardTopo {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .tituloCard {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    
+    .servicosImagem {
+        width: 70px;
+        height: 70px;
+        margin: 10px;
+    }
+    
+    .descricaoCard {
+        font-size: 14px;
+        margin: 10px 15px;
+        text-indent: 2em;
+        line-height: 1.5;
+    }
+    
+    /* === FOOTER === */
+    .rodape-topo {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .copy {
+        font-size: 12px;
+        margin: 15px;
+        text-align: center;
+        padding: 0 15px;
+    }
+}
+
+/* --- CELULAR PEQUENO (até 480px) --- */
+@media (max-width: 480px) {
+    
+    /* === HEADER === */
+    .logoImagem {
+        width: 6rem;
+    }
+    
+    nav a {
+        font-size: 0.85rem;
+        padding: 4px 8px;
+    }
+    
+    .whatsappImagem {
+        width: 38px;
+    }
+    
+    /* === SEÇÃO APRESENTAÇÃO === */
+    .secaoApresentaçao {
+        height: 450px;
+        padding: 15px 10px;
+    }
+    
+    .tituloApresentaçao {
+        font-size: 26px;
+    }
+    
+    .tituloApresentaçao br {
+        display: none;
+    }
+    
+    .descriçaoApresentaçao {
+        font-size: 15px;
+        padding: 0 5px;
+    }
+    
+    .linksApresentaçao {
+        max-width: 250px;
+    }
+    
+    .orcamento, .produtos {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    /* === SEÇÃO DESCUBRA === */
+    .subtituloDescubra {
+        font-size: 17px;
+    }
+    
+    .tituloDescubra {
+        font-size: 32px;
+    }
+    
+    .tituloDescubra br {
+        display: none;
+    }
+    
+    .imagemDescubra {
+        width: 150px;
+        height: 112px;
+    }
+    
+    .slide {
+        gap: 10px;
+        padding: 8px 0;
+    }
+    
+    @keyframes deslize {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-50% - 5px)); }
+    }
+    
+    .linksDescubra .orcamento,
+    .linksDescubra .produtos {
+        font-size: 14px;
+        padding: 10px 15px;
+        width: 90%;
+    }
+    
+    /* === SEÇÃO VÍDEOS === */
+    .secaoVideos h2 {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    
+    .seta {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    
+    .seta-esquerda {
+        left: -10px;
+    }
+    
+    .seta-direita {
+        right: -10px;
+    }
+    
+    .video-item video {
+        max-height: 200px;
+    }
+    
+    .video-titulo {
+        font-size: 0.75rem;
+        padding: 8px 0 6px 0;
+    }
+    
+    .bolinha {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .bolinha.ativa {
+        width: 20px;
+    }
+    
+    /* === SEÇÃO SERVIÇOS === */
+    #secaoServicos h2 {
+        font-size: 1.3rem;
+        padding: 30px 10px 15px 10px;
+    }
+    
+    .servicos {
+        gap: 15px;
+        padding-bottom: 30px;
+        margin: 0 5px;
+    }
+    
+    .tituloCard {
+        font-size: 18px;
+    }
+    
+    .servicosImagem {
+        width: 60px;
+        height: 60px;
+        margin: 8px;
+    }
+    
+    .descricaoCard {
+        font-size: 13px;
+        margin: 8px 12px;
+        text-indent: 1.5em;
+    }
+    
+    /* === FOOTER === */
+    .rodape-topo {
+        font-size: 12px;
+    }
+    
+    .copy {
+        font-size: 11px;
+        margin: 10px;
+    }
+}
+
+/* --- TELAS MUITO PEQUENAS (até 360px) --- */
+@media (max-width: 360px) {
+    
+    .tituloApresentaçao {
+        font-size: 22px;
+    }
+    
+    .descriçaoApresentaçao {
+        font-size: 13px;
+    }
+    
+    .tituloDescubra {
+        font-size: 26px;
+    }
+    
+    .imagemDescubra {
+        width: 120px;
+        height: 90px;
+    }
+    
+    .video-item video {
+        max-height: 150px;
+    }
+    
+    .seta {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+    
+    .seta-esquerda {
+        left: -8px;
+    }
+    
+    .seta-direita {
+        right: -8px;
+    }
 }
