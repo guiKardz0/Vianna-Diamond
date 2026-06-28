@@ -230,3 +230,20 @@ hr{
     }
 
 }
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape-topo{
+    color: #ffbb33;
+    margin-top: 40px;
+}
+
+.copy{
+    color: #999;
+    margin: 30px;
+}

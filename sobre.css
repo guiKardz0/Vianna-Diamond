@@ -105,7 +105,6 @@ nav a:hover {
 /* configurações da section sobre*/
 
 
-
 main {
 
     background-color: white; /*configurações do main*/
@@ -238,5 +237,45 @@ main {
     border: solid white 2px;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.rodape-topo{
+    color: #ffbb33;
+    margin-top: 40px;
+}
 
+.copy{
+    color: #999;
+    margin: 30px;
+}
+
+/* Evita rolagem horizontal */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    width: 100%;
+}
+
+/* Nav em linha */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* quebra a linha se necessário */
+    gap: 10px;
+}
+
+nav a {
+    font-size: 14px;
+    padding: 5px;
+    white-space: nowrap;
+}
