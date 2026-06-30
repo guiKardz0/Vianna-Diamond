@@ -99,6 +99,7 @@ main{
     flex-wrap: wrap;
 }
 
+
 .card-cortinas{  /*configurações dos cards*/
     
     font-size: 15px;
@@ -148,15 +149,12 @@ main{
 
 
 .container-persianas {
-    
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly   ;
     flex-direction:row;
     flex-wrap: wrap;
     gap: 20px;
-    
-
 }
 
 
@@ -214,8 +212,9 @@ main{
     width: 700px;
     text-align: center;
     margin: 30px 20px 0px 350px;
-     background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
+    padding: 20px;
 }
 
 
@@ -278,7 +277,7 @@ button{
     
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction:row;
     flex-wrap: wrap;
     gap: 20px;
@@ -317,6 +316,7 @@ button{
         border-radius: 40px;
         flex-grow: 1;
         transition: all 0.5s;
+        cursor: pointer;
     }
     
         button:hover {
@@ -326,6 +326,7 @@ button{
         border: solid white 2px;
     }
 }
+
 
 footer{
     display: flex;
