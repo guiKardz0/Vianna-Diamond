@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vianna Diamond</title>
+    <title>Vianna Diamond - Contatos</title>
     <link rel="stylesheet" href="contatos.css">
-    <link rel="shortcut icon" href="./Imagens/Vianna-DIamond-Logo.png"
-    type="image/x-icon">
+    <link rel="shortcut icon" href="./Imagens/Vianna-DIamond-Logo.png" type="image/x-icon">
 </head>
 
-
-
 <body>
-    <script src="contatos.js"></script>
     <header>
         <div class="logo">
-            <a href="#topo"><img class="logoImagem" src="./Imagens/Vianna-Diamond-Logo.png"
-                    alt="Logo-Vianna-Diamond"></a>
+            <a href="./index.html">
+                <img class="logoImagem" src="./Imagens/Vianna-Diamond-Logo.png" alt="Logo-Vianna-Diamond">
+            </a>
         </div>
 
         <nav>
@@ -29,64 +26,54 @@
         <a href="https://wa.me/5511980182406" class="whatsapp" target="_blank">
             <img class="whatsappImagem" src="./Imagens/whatsapp-logo.png" alt="whatsapp-logo">
         </a>
-
     </header>
-<body>
-    <section class="contato">
 
-        <form>
+    <main>
+        <!-- FORMULÁRIO -->
+        <section class="contato">
+            <form>
+                <input type="text" id="nome" placeholder="Nome">
 
-            <input type="text" id="nome" placeholder="Nome">  <!--  placeholder siginfica espaço reservado -->
+                <div class="linha">
+                    <input type="email" placeholder="Email">
+                    <input type="text" id="whatsapp" placeholder="WhatsApp">
+                </div>
 
-            <div class="linha">
-                <input type="email" placeholder="Email">
-                <input type="text" id="whatsapp" placeholder="WhatsApp">
+                <textarea placeholder="Digite sua mensagem."></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- INFORMAÇÕES -->
+        <section class="informacoes">
+            <div class="info">
+                <h2>Endereço</h2>
+                <p>
+                    R: Doutor Gabriel Nicolau, 60<br>
+                    São Paulo, SP<br>
+                    Cep: 02471-110
+                </p>
             </div>
 
-            <textarea placeholder="Digite sua mensagem."></textarea>
+            <div class="info">
+                <h2>Horário</h2>
+                <p>
+                    Segunda – Sexta<br>
+                    9 às 18 hs
+                </p>
+            </div>
+        </section>
 
-            <button>Enviar mensagem</button>
 
-        </form>
+    </main>
 
-    </section>
+    <footer>
+        <p class="copy">© 2026 Vianna Diamond. Todos os direitos reservados.</p>
+    </footer>
 
-    <hr>
-
-    <section class="informacoes">
-
-        <div class="info">
-            <h2>Endereço</h2>
-            <p>
-                R : Doutor Gabriel Nicolau , 60<br>
-                - São Paulo , SP<br>
-                Cep : 02471-110
-            </p>
-        </div>
-
-        <div class="info">
-            <h2>Horario</h2>
-            <p>
-                Segunda – Sexta<br>
-                9 às 18 hs
-            </p>
-        </div>
-
-    </section>
-
-    <section class="redes">
-
-        <div class="social">
-            <img src="./Imagens/whatsapp2.png" alt="">
-
-            <img src="./Imagens/instagram-removebg-preview.png" alt="">
-
-            <img src="./emaillllll.png" alt="">
-        </div>
-        
-
-    </section>
-<footer><a href="#topo" class="rodape-topo">Quer ir de volta ao topo?</a>
-        <p class="copy">© 2026 Vianna Diamond. Todos os direitos reservados.</p></footer>
+    <script src="contatos.js"></script>
 </body>
 </html>
